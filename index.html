@@ -12,66 +12,70 @@
       <button id="button">+</button>
     </div>
 
-    <div id="instrcutions-container">
+    <div id="instructions-container">
       <h1>Instructions</h1>
       <ol>
         <li>
-          Check out the src/index.js file to see how the above red square is
-          created.
+          Check out the <code>src/index.js</code> file to see how the above red square is created.
           <br />
           <br />
-          Go to the src/Dot.js file and analyse the code in the constructor of
-          the Dot class.
+          Go to the <code>src/Dot.js</code> file and analyse the code in the constructor of the Dot class.
           <br />
-          In src/index.js, create a blue square of size 50.
+          <br />
+          In <code>src/index.js</code>, create a blue square of size 50.
         </li>
 
         <li>
-          In src/Dot.js analyze the code present in the move() method, which
-          allows you to move a square to the coordinates given in the parameters
+          In <code>src/Dot.js</code>, analyze the code present in the <code>move()</code> method, which           allows you to move a square to the coordinates given in the parameters
           <br />
-          Try to move the blue square to the coordinates x: 300, y: 50 using the
-          move() method. <br />
-          The blue square should be at the top right of the frame.
+          <br />
+          Try to move the blue square to the coordinates <code>x: 300, y: 50</code> using the move() method.
+          <br />
+          <br />
+          The blue square should be at the top right of the frame (but not all the way to to the corner).
         </li>
 
         <li>
-          Complete the method setRadius. This function takes a number as a
-          parameter and adjusts the border-radius of the square to "round the
-          corners". <br />
-          When the radius parameter is below 0, the border-radius must be zero.
+          Complete the method <code>setRadius</code>. This function takes a number as a parameter and adjusts the border-radius of the square to "round the corners".
           <br />
-          When the radius parameter is above 50, the border-radius must be be
-          50%. <br />
-          Otherwise the border-radius takes the value of the parameter.
+          <br />
+          If the radius parameter is below 0, set the border-radius to zero.
+          <br />
+          <br />
+          If the radius parameter is above 50, set border-radius to 50%.
+          <br />
+          <br />
+          Otherwise, the border-radius takes the value of the parameter.
         </li>
 
         <li>
-          Set the edge rounding of the first square to 20.
+          Set the edge rounding of the red square to 20.
           <br />
-          Change the rounding of the edges of the second square so that it
-          becomes a dot.
+          <br />
+          Change the rounding of the edges of the second square so that it becomes a circle.
         </li>
 
         <li>
-          Create a new green square of size 75 and move it to the coordinates x:
-          350, y: 250 <br />
-          Ooooops, that last one is out of the box... But don't change anything
-          in src/index.js!
-          <br />Instead, adapt the move() method to ensure that the square never
-          leaves the frame, which is 400px wide and 300px high. high. If your
-          code is correct, the green square is now "stuck" to the at the bottom
-          right edge of the frame.
+          Create a new green square of size 75 and move it to the coordinates <code>x: 350, y: 250</code>
+          <br />
+          <br />
+          Ooooops, that last one is out of the box... But don't change anything in <code>src/index.js</code> yet!
+          <br />
+          <br />
+          Instead, adapt the move() method to ensure that the square never leaves the frame (hint: how do we find out the size of the frame?). If your code is correct, the green square is now "stuck" to the at the bottom right edge of the frame.
         </li>
       </ol>
 
       <h1>Bonus</h1>
       <ol>
         <li>
-          In index.js create an event on the button so that it adds a dot.
+          In index.js create an event on the button so that it adds a new circle.
         </li>
         <li>
-          Maintain a random position for each new point created.
+          Maintain a random position for each new circle created.
+        </li>
+        <li>
+          Extra points if you give it a random color.
         </li>
       </ol>
     </div>

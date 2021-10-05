@@ -17,9 +17,7 @@ export default class Dot {
     this.move(0, 0);
   }
 
-  // Step 2 : Analyze the code of the move method
   move(x, y) {
-    // Step 5 : Adapt the move() method so that the element never leaves the frame
     this.x = x;
     this.y = y;
     this.element.style.left = x + "px";
@@ -37,6 +35,5 @@ export default class Dot {
     this.element.style.backgroundColor = color;
   }
 
-  // Step 3: Complete the setRadius method.
   setRadius(radius) {}
 }
